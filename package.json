@@ -20,9 +20,9 @@
     "slick-carousel": "^1.8.1"
   },
   "scripts": {
-    "start": "env ESLINT_NO_DEV_ERRORS=true react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "start": "env ESLINT_NO_DEV_ERRORS=true react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test-coverage": "react-scripts test --coverage --watchAll=false",
