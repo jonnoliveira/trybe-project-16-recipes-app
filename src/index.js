@@ -9,7 +9,7 @@ import SearchBarProvider from './context/SearchBarProvider';
 ReactDOM
   .createRoot(document.getElementById('root'))
   .render(
-    <BrowserRouter>
+    <BrowserRouter basename={ process.env.PUBLIC_URL }>
       <SearchBarProvider>
         <App />
       </SearchBarProvider>
