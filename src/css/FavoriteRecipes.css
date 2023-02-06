@@ -22,11 +22,12 @@
   display: flex;
   flex-direction: column;
   list-style: none;
+  margin-bottom: 15vh;
 }
 
 .favoriteElements li {
   align-self: center;
-  border: 1px solid rgb(252, 220, 54);
+  border: 1px solid black;
   border-radius: 12px;
   display: flex;
   height: 150px;
@@ -72,3 +73,10 @@
   height: 1.5rem;
   margin-bottom: 0;
 }
+
+.filters-btn {
+  background-color: transparent;
+  border: none;
+  width: 100px;
+}
+

@@ -8,7 +8,8 @@
 
 .btnStart {
   align-items: center;
-  background: #fcc436;
+  background: black;
+  border: none;
   border-radius: 5px;
   bottom: 0;
   color: white;

@@ -1,15 +1,15 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import drinkIcon from '../images/drink-icon.svg';
-import logo from '../images/recipes-logo.svg';
+import drinkIcon from '../images/icons/drinksIcon.svg';
 import lupa from '../images/searchIcon.svg';
 import profileBlue from '../images/profileIcon.svg';
-import profileYellow from '../images/profile-yellow.svg';
+import profileBlack from '../images/profile-black.svg';
 import mealIcon from '../images/meal-icon.svg';
 import favoriteIcon from '../images/favorite-icon.svg';
 import doneIcon from '../images/done-icon.svg';
 import SearchBar from './SearchBar';
+import logo from '../images/icons/logo.svg';
 import '../css/header.css';
 
 function Header() {
@@ -72,13 +72,13 @@ function Header() {
         ) }
         { history.location.pathname === '/drinks' && (
           <div className="page-title">
-            <img src={ drinkIcon } alt="Drink" />
+            <img className="drink-icon" src={ drinkIcon } alt="Drink" />
             <h1 data-testid="page-title">Drinks</h1>
           </div>
         ) }
         { history.location.pathname === '/profile' && (
           <div className="page-title">
-            <img src={ profileYellow } alt="Profile" />
+            <img src={ profileBlack } alt="Profile" />
             <h1 data-testid="page-title">Profile</h1>
           </div>
         ) }

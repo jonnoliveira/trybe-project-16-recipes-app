@@ -57,7 +57,7 @@
 }
 
 .category-in-progress span {
-  color: #fcc436;
+  color: black;
   font-size: 18px;
   font-weight: 700;
   height: 20px;
@@ -65,6 +65,13 @@
   margin-left: 15px;
   text-align: center;
   width: 20px;
+}
+
+.share-icon {
+  left: -5px;
+  position: absolute;
+  top: 0;
+  width: 30px;
 }
 
 .botoes-in-progress {
@@ -102,7 +109,7 @@
 }
 
 .checkbox:checked {
-  accent-color: #fcc436;
+  accent-color: grey;
   margin-right: 15px;
 }
 
@@ -124,7 +131,7 @@
 }
 
 .finish-button-inprogress {
-  background-color: #fcc436;
+  background-color: black;
   border: none;
   border-radius: 5px;
   color: white;

@@ -11,20 +11,19 @@ function Card({ index, name, image, id }) {
   };
 
   return (
-    <div className="card-container">
+    <button
+      className="card-container"
+      onClick={ handlerClickCard }
+      data-testid={ `${index}-recipe-card` }
+
+    >
       <img
         src={ image }
         data-testid={ `${index}-card-img` }
         alt={ name }
       />
       <p data-testid={ `${index}-card-name` }>{name}</p>
-      <button
-        onClick={ handlerClickCard }
-        data-testid={ `${index}-recipe-card` }
-      >
-        Ver Receita
-      </button>
-    </div>
+    </button>
   );
 }
 

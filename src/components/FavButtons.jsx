@@ -1,8 +1,9 @@
 import propTypes from 'prop-types';
 import { useState } from 'react';
+import '../css/FavButtons.css';
 
 import heartIcon from '../images/blackHeartIcon.svg';
-import shareIcon from '../images/shareIcon.svg';
+import shareIcon from '../images/icons/share.svg';
 
 function FavButtons({ index, URL, remove }) {
   const [copied, setCopied] = useState(false);
@@ -22,9 +23,8 @@ function FavButtons({ index, URL, remove }) {
         alt="Share Icon"
         onClick={ () => clipboard() }
         data-testid={ `${index}-horizontal-share-btn` }
+        className="share-btn-fav"
       />
-
-      {copied ? <p>Link copied!</p> : ''}
 
       <input
         type="image"
@@ -33,6 +33,9 @@ function FavButtons({ index, URL, remove }) {
         onClick={ remove }
         data-testid={ `${index}-horizontal-favorite-btn` }
       />
+
+      {copied && <p className="alert-copie">Link copied!</p>}
+
     </div>
   );
 }

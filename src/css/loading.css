@@ -6,14 +6,14 @@
 
 .charging-container {
   align-items: center;
-  background-color: #fcc436;
+  background-color: black;
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
 
 .loading-text {
-  color: #41197f;
+  color: white;
   font-family: Epilogue , sans-serif;
   font-size: 24px;
   font-weight: 400;

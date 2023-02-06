@@ -27,16 +27,20 @@
 }
 
 .alert-copy {
-  background-color: #fcc436;
-  border: 2px solid #41197f;
+  background-color: black;
+  border: 2px solid white;
   border-radius: 8px;
   bottom: 20px;
-  color: #41197f;
+  color: white;
   display: inline-block;
   margin-bottom: 6px;
   padding: 2px 3px;
   position: fixed;
   z-index: 1;
+}
+
+.cards-done {
+  margin-bottom: 10vh;
 }
 
 .card-done-recipe {
@@ -103,4 +107,9 @@
   line-height: 9px;
   margin-right: 2px;
   padding: 3px 4px;
+}
+
+.share-icon-done {
+  margin: 5px;
+  width: 25px;
 }

@@ -4,7 +4,7 @@ import '../css/recipeInProgress.css';
 import useRecipeInProgress from '../hook/useRecipeInProgress';
 import blackHeart from '../images/blackHeartIcon.svg';
 import mealicon from '../images/meal-icon.svg';
-import shareIcon from '../images/shareIcon.svg';
+import shareIcon from '../images/icons/share.svg';
 import whiteHeart from '../images/whiteHeartIcon.svg';
 
 function RecipeInProgress() {
@@ -86,7 +86,7 @@ function RecipeInProgress() {
                 data-testid="share-btn"
                 type="button"
               >
-                <img src={ shareIcon } alt="share icon" />
+                <img src={ shareIcon } alt="share icon" className="share-icon" />
               </button>
               <button
                 src={ favorite ? blackHeart : whiteHeart }

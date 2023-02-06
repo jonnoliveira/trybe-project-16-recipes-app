@@ -1,7 +1,6 @@
 import React from 'react';
 import useLogin from '../hook/useLogin';
-import logo from '../images/logo-recipes-app.svg';
-import tomato from '../images/tomato.svg';
+import images from '../images/login/images';
 import '../css/login.css';
 
 function Login() {
@@ -9,9 +8,16 @@ function Login() {
 
   return (
     <section className="login-page">
-      <div className="purple-container">
-        <img className="logo-img" src={ logo } alt="Logo" />
-        <img className="tomato-img" src={ tomato } alt="Tomato" />
+      <div className="login-image">
+        <img src="https://www.svgrepo.com/show/186339/recipe-book.svg" alt="recipe icon" />
+        <h1>RECIPES app</h1>
+      </div>
+      <div className="images-line">
+        {
+          images.map(({ src, alt }) => (
+            <img key={ alt } src={ src } alt={ alt } />
+          ))
+        }
       </div>
       <div className="form-container">
         <form className="form-login">

@@ -1,22 +1,32 @@
 import { useState, useEffect } from 'react';
 import FavButtons from '../components/FavButtons';
 import Header from '../components/Header';
-import searchBlue from '../images/favorite-icon.svg';
-import mealIcon from '../images/meal-icon.svg';
-import drinkIcon from '../images/drink-icon.svg';
 import '../css/FavoriteRecipes.css';
 import BtnBackProfile from '../components/BtnBackProfile';
 import Footer from '../components/Footer';
+import mealNDrink from '../images/meal-n-drink.svg';
+import food from '../images/food.svg';
+import drinks from '../images/drinks.svg';
+import Loading from '../components/Loading';
 
 const categButtons = [
-  { categ: 'all', label: 'All', src: searchBlue },
-  { categ: 'meal', label: 'Meal', src: mealIcon },
-  { categ: 'drink', label: 'Drink', src: drinkIcon },
+  { categ: 'all', src: mealNDrink },
+  { categ: 'meal', src: food },
+  { categ: 'drink', src: drinks },
 ];
 
 function FavoriteRecipes() {
   const [receivedRecipes, setReceivedRecipes] = useState([]);
   const [filter, setFilter] = useState('all');
+  const [isLoading, setIsLoading] = useState(true);
+
+  const isLoadingFunc = () => {
+    if (receivedRecipes) {
+      setIsLoading(false);
+    } else {
+      setIsLoading(true);
+    }
+  };
 
   const removeFavorite = (idRef) => {
     const answer = receivedRecipes.filter(({ id }) => id !== idRef);
@@ -31,25 +41,28 @@ function FavoriteRecipes() {
   useEffect(() => {
     const answer = JSON.stringify(receivedRecipes);
     localStorage.setItem('favoriteRecipes', answer);
+    isLoadingFunc();
   }, [receivedRecipes]);
 
   const filterButtons = (
     <div className="favoriteFilters">
-      {categButtons.map(({ categ, label, src }) => (
+      {categButtons.map(({ categ, src }) => (
         <div key={ categ }>
-          <input
+          <button
+            className="filters-btn"
             src={ src }
             alt={ categ }
             type="image"
             onClick={ () => setFilter(categ) }
             data-testid={ `filter-by-${categ}-btn` }
-          />
-          <p>{label}</p>
+          >
+            <img src={ src } alt={ categ } />
+
+          </button>
         </div>
       ))}
     </div>
   );
-
   const elements = (
     <ul className="favoriteElements">
       {receivedRecipes
@@ -102,13 +115,22 @@ function FavoriteRecipes() {
   );
 
   return (
-    <>
-      <Header />
-      <BtnBackProfile />
-      {filterButtons}
-      {elements}
-      <Footer />
-    </>
+    <div>
+      {
+        isLoading
+          ? <Loading />
+          : (
+            <>
+              <Header />
+              <BtnBackProfile />
+              {filterButtons}
+              {elements}
+              <Footer />
+            </>
+          )
+      }
+
+    </div>
   );
 }
 
