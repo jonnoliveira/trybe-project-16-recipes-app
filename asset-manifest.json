@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/trybe-project-16-recipes-app/static/css/main.b36b26d2.css",
+    "main.css": "/trybe-project-16-recipes-app/static/css/main.78e72453.css",
     "main.js": "/trybe-project-16-recipes-app/static/js/main.396d2c8b.js",
     "static/media/wave4.jpg": "/trybe-project-16-recipes-app/static/media/wave4.d810de9d4df2cca984d0.jpg",
     "static/media/whiteHeartIcon.svg": "/trybe-project-16-recipes-app/static/media/whiteHeartIcon.2b822118952dc5140129c6349fcd0472.svg",
@@ -25,11 +25,11 @@
     "static/media/searchIcon.svg": "/trybe-project-16-recipes-app/static/media/searchIcon.ec973d5c6503c6518972c2378119f453.svg",
     "static/media/done-icon.svg": "/trybe-project-16-recipes-app/static/media/done-icon.953d9f2a6f3e07f0c206fb2b65046b8a.svg",
     "static/media/logout.svg": "/trybe-project-16-recipes-app/static/media/logout.d949ea0957dc422635c4750035c7f769.svg",
-    "main.b36b26d2.css.map": "/trybe-project-16-recipes-app/static/css/main.b36b26d2.css.map",
+    "main.78e72453.css.map": "/trybe-project-16-recipes-app/static/css/main.78e72453.css.map",
     "main.396d2c8b.js.map": "/trybe-project-16-recipes-app/static/js/main.396d2c8b.js.map"
   },
   "entrypoints": [
-    "static/css/main.b36b26d2.css",
+    "static/css/main.78e72453.css",
     "static/js/main.396d2c8b.js"
   ]
 }
