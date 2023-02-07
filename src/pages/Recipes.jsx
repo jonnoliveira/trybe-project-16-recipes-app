@@ -20,12 +20,14 @@ function Recipes() {
   };
   const [recipes, setRecipes] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [isLoadingCat, setIsLoadingCat] = useState(true);
+
   const location = useLocation();
   const [categories, setCategories] = useState({ cat: [], img: [] });
   const { searchRecipes } = useContext(SearchBarContext);
 
   const fetchCategories = async () => {
-    setIsLoading(true);
+    setIsLoadingCat(true);
     if (location.pathname === '/meals') {
       const response = await fetch('https://www.themealdb.com/api/json/v1/1/list.php?c=list');
       const data = await response.json();
@@ -37,7 +39,7 @@ function Recipes() {
       const result = data.drinks.map((d) => d.strCategory).slice(0, NUMBER_FIVE);
       setCategories({ cat: result, img: imageDrinksCategories });
     }
-    setIsLoading(false);
+    setIsLoadingCat(false);
   };
 
   const fetchRecipes = async () => {
@@ -58,6 +60,7 @@ function Recipes() {
 
   useEffect(() => {
     fetchRecipes();
+    fetchCategories();
   }, [location]);
 
   const handlerClick = async ({ target }) => {
@@ -96,7 +99,7 @@ function Recipes() {
   return (
     <div>
       {
-        isLoading
+        isLoading || isLoadingCat
           ? (
             <Loading />
           )
