@@ -162,18 +162,21 @@ h4 {
   font-weight: 700;
 }
 
-.alert {
-  align-content: center;
+.alert-container {
+  align-items: center;
   background-color: black;
   border: none;
   border-radius: 10px;
-  color: white;
   display: flex;
-  font-weight: 900;
   height: 30px;
-  justify-content: center;
+  justify-items: center;
   left: 60vw;
   position: absolute;
   top: 50px;
   width: 120px;
+}
+
+.alert {
+  color: white;
+  font-weight: 900;
 }
