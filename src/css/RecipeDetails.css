@@ -9,7 +9,6 @@
 }
 
 .recipe-photo {
-  border-radius: 10px;
   filter: brightness(65%);
   height: 200px;
   margin-bottom: 20px;
@@ -22,7 +21,7 @@
   font-size: 20px;
   font-weight: 900;
   height: 21px;
-  left: 12vw;
+  left: 17vw;
   letter-spacing: 0.105em;
   position: absolute;
   text-align: center;
