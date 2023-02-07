@@ -8,10 +8,6 @@
   padding: 0;
 }
 
-.content-container {
-  width: 90%;
-}
-
 .recipe-photo {
   border-radius: 10px;
   filter: brightness(65%);
@@ -36,7 +32,7 @@
 }
 
 .recipe-category {
-  color: #fcc436;
+  color: white;
   font-size: 0.9em;
   font-weight: 900;
   height: 33px;
