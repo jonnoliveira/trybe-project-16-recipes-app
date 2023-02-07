@@ -91,7 +91,9 @@ function RecipeDetails() {
                         typeFood={ typeFood }
                         handlerClickCopy={ handlerClickCopy }
                       />
-                      {alertCopy && <p className="alert">Link copied!</p>}
+                      <div className="alert-container">
+                        {alertCopy && <p className="alert">Link copied!</p>}
+                      </div>
                       <BtnFavorite
                         handlerFavorite={ handlerFavorite }
                         favorite={ favorite }
