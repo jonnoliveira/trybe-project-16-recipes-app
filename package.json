@@ -1,6 +1,6 @@
 {
   "name": "recipes-app-test",
-  "homepage": "http://jonnoliveira.github.io/trybe-projects-16-recipes-app",
+  "homepage": "http://jonnoliveira.github.io/trybe-project-16-recipes-app",
   "version": "1.0.0",
   "private": true,
   "engines": {
