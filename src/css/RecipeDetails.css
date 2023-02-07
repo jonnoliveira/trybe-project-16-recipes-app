@@ -8,6 +8,11 @@
   padding: 0;
 }
 
+.content-container {
+  width: 90%;
+  border: 1px solid red;
+}
+
 .recipe-photo {
   border-radius: 10px;
   filter: brightness(65%);
@@ -99,12 +104,6 @@ h4 {
   width: 90%;
 }
 
-.video {
-  align-content: center;
-  display: flex;
-  justify-content: center;
-}
-
 .slider-container {
   left: 7vw;
   position: relative;
@@ -126,7 +125,6 @@ h4 {
   height: 33vh;
   justify-content: space-between;
 }
-
 
 @keyframes items {
 

@@ -35,12 +35,12 @@ function RecipeDetails() {
         recipes.id === '' || recomendation === undefined
           ? <Loading />
           : (
-            <div>
+            <div className="content-container">
               {
                 history.location.pathname.includes('/meals')
 
                   ? (
-                    <div>
+                    <div className="content">
                       <img
                         data-testid="recipe-photo"
                         className="recipe-photo"
