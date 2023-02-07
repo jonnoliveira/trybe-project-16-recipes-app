@@ -5,7 +5,7 @@
 .searchBarDiv {
   align-items: center;
   align-self: center;
-  background-color: #41197f;
+  background-color: black;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -43,7 +43,7 @@
 }
 
 .searchBarButton {
-  background-color: rgb(252, 220, 54);
+  background-color: #00a1d2;
   border-radius: 6px;
   color: white;
   font-size: medium;
