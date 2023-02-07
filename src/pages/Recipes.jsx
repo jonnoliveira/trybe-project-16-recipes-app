@@ -25,6 +25,7 @@ function Recipes() {
   const { searchRecipes } = useContext(SearchBarContext);
 
   const fetchCategories = async () => {
+    setIsLoading(true);
     if (location.pathname === '/meals') {
       const response = await fetch('https://www.themealdb.com/api/json/v1/1/list.php?c=list');
       const data = await response.json();
@@ -36,6 +37,7 @@ function Recipes() {
       const result = data.drinks.map((d) => d.strCategory).slice(0, NUMBER_FIVE);
       setCategories({ cat: result, img: imageDrinksCategories });
     }
+    setIsLoading(false);
   };
 
   const fetchRecipes = async () => {
@@ -56,7 +58,7 @@ function Recipes() {
 
   useEffect(() => {
     fetchRecipes();
-  }, []);
+  }, [location]);
 
   const handlerClick = async ({ target }) => {
     const categoryFiltered = target.alt || target.innerText;
@@ -75,6 +77,7 @@ function Recipes() {
 
   useEffect(() => {
     const { results, type } = searchRecipes;
+    setIsLoading(true);
 
     if (results === null) {
       setRecipes([]);
@@ -83,61 +86,69 @@ function Recipes() {
     } else if (results[type] && results[type].length <= 1) {
       console.log('Single!');
     }
+    setIsLoading(false);
   }, [searchRecipes]);
 
   const handlerClickAllRecipes = () => {
     fetchRecipes();
   };
 
-  if (isLoading) {
-    return <Loading />;
-  }
-
   return (
     <div>
-      <Header />
-      <div className="btn-container">
-        <div className="btn-filter-container">
-          <button
-            onClick={ handlerClickAllRecipes }
-            type="button"
-            data-testid="All-category-filter"
-            className="btn-filter"
-          >
-            <img src="https://cdn-icons-png.flaticon.com/512/5393/5393437.png" alt="all.icon" />
-            <p>All</p>
-          </button>
-          {categories.cat.map((categoria, index) => (
-            <button
-              onClick={ handlerClick }
-              key={ index }
-              type="button"
-              data-testid={ `${categoria}-category-filter` }
-              className="btn-filter"
-            >
-              <img
-                src={ location.pathname === '/meals'
-                  ? imageMealsCategories[index]
-                  : imageDrinksCategories[index] }
-                alt={ categoria }
-              />
-              <p>{ categoria }</p>
-            </button>
-          ))}
-        </div>
-      </div>
-      <div className="recipes-container">
-        {recipes.map((recipe, index) => (
-          <Card
-            id={ recipe.idMeal || recipe.idDrink }
-            key={ recipe.idMeal || recipe.idDrink }
-            index={ index }
-            name={ recipe.strMeal || recipe.strDrink }
-            image={ recipe.strMealThumb || recipe.strDrinkThumb }
-          />
-        ))}
-        <Footer />
-      </div>
+      {
+        isLoading
+          ? (
+            <Loading />
+          )
+          : (
+            <>
+              <Header />
+              <div className="btn-container">
+                <div className="btn-filter-container">
+                  <button
+                    onClick={ handlerClickAllRecipes }
+                    type="button"
+                    data-testid="All-category-filter"
+                    className="btn-filter"
+                  >
+                    <img src="https://cdn-icons-png.flaticon.com/512/5393/5393437.png" alt="all.icon" />
+                    <p>All</p>
+                  </button>
+                  {categories.cat.map((categoria, index) => (
+                    <button
+                      onClick={ handlerClick }
+                      key={ index }
+                      type="button"
+                      data-testid={ `${categoria}-category-filter` }
+                      className="btn-filter"
+                    >
+                      <img
+                        src={ location.pathname === '/meals'
+                          ? imageMealsCategories[index]
+                          : imageDrinksCategories[index] }
+                        alt={ categoria }
+                      />
+                      <p>{ categoria }</p>
+                    </button>
+                  ))}
+                </div>
+              </div>
+              <div className="recipes-container">
+                {recipes.map((recipe, index) => (
+                  <Card
+                    id={ recipe.idMeal || recipe.idDrink }
+                    key={ recipe.idMeal || recipe.idDrink }
+                    index={ index }
+                    name={ recipe.strMeal || recipe.strDrink }
+                    image={ recipe.strMealThumb || recipe.strDrinkThumb }
+                  />
+                ))}
+                <Footer />
+              </div>
+            </>
+          )
+      }
+
     </div>
   );
 }

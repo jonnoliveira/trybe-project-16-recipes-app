@@ -138,7 +138,7 @@ function RecipeInProgress() {
             type="button"
             onClick={ handlerClickFinish }
           >
-            Finalizar
+            Finalize
           </button>
         </>
       )}

@@ -9,6 +9,7 @@ function BtnStartRecipe() {
   const [disabled, setDisabled] = useState(false);
   const [proceed, setProceed] = useState(false);
   const [food, setFood] = useState('');
+  const [recipeMade, setRecipeMade] = useState(false);
   const location = useLocation();
   const doneRecipe = JSON.parse(localStorage.getItem('doneRecipes'));
   const inProgress = JSON.parse(localStorage.getItem('inProgressRecipes'));
@@ -42,7 +43,8 @@ function BtnStartRecipe() {
 
     if (doneRecipe) {
       const find = doneRecipe.find((recipe) => recipe.id === pageId);
-      return setDisabled(find);
+      setDisabled(find);
+      return setRecipeMade(find);
     }
   };
 
@@ -53,15 +55,49 @@ function BtnStartRecipe() {
 
   return (
     <div className="container-btnStart">
-      <button
-        className="btnStart"
-        type="button"
-        disabled={ disabled }
-        onClick={ redirectTo }
-        data-testid="start-recipe-btn"
-      >
-        { !proceed ? 'Start Recipe' : 'Continue Recipe'}
-      </button>
+      {
+        recipeMade
+          ? (
+            <button
+              className="btnStart"
+              type="button"
+              disabled={ disabled }
+              onClick={ redirectTo }
+              data-testid="start-recipe-btn"
+            >
+              Recipe made
+            </button>
+          )
+          : (
+            <div className="container-btnStart">
+              {
+                !proceed
+                  ? (
+                    <button
+                      className="btnStart"
+                      type="button"
+                      disabled={ disabled }
+                      onClick={ redirectTo }
+                      data-testid="start-recipe-btn"
+                    >
+                      Start Recipe
+                    </button>
+                  )
+                  : (
+                    <button
+                      className="btnStart"
+                      type="button"
+                      disabled={ disabled }
+                      onClick={ redirectTo }
+                      data-testid="start-recipe-btn"
+                    >
+                      Continue Recipe
+                    </button>
+                  )
+              }
+            </div>
+          )
+      }
     </div>
   );
 }
