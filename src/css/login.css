@@ -47,8 +47,8 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding-top: 10vh;
   padding-left: 16vw;
+  padding-top: 10vh;
   position: absolute;
 }
 
@@ -94,4 +94,11 @@
 .login-botton:disabled {
   background-color: #00a1d280;
   color: rgba(255, 255, 255, 0.555);
+}
+
+@media screen and ( max-height : 500px ) {
+
+  .images-line {
+    display: none;
+  }
 }
