@@ -28,10 +28,11 @@ function RecipeDetails() {
     slidesToShow: 2,
     slidesToScroll: 1,
   };
+
   return (
     <div className="container">
       {
-        recipes.id === ''
+        recipes.id === '' || recomendation === undefined
           ? <Loading />
           : (
             <div>
@@ -97,12 +98,13 @@ function RecipeDetails() {
                       />
                       {
                         recomendation === undefined
+
                           ? (
-                            <p>Loading...</p>
+                            <Loading />
                           )
                           : (
                             <div className="slider-container">
-                              <Slider { ...settings } className="slider-container">
+                              <Slider { ...settings } className="slider">
                                 {
                                   recomendation.map((recom) => (
                                     <button
@@ -190,11 +192,11 @@ function RecipeDetails() {
                       {
                         recomendation === undefined
                           ? (
-                            <p>Loading...</p>
+                            <Loading />
                           )
                           : (
                             <div className="slider-container">
-                              <Slider { ...settings }>
+                              <Slider { ...settings } className="slider">
                                 {
                                   recomendation.map((recom) => (
                                     <button

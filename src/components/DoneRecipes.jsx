@@ -87,15 +87,7 @@ function DoneRecipes() {
                   alt="imageRecipe"
                 />
               </Link>
-              <button
-                className="share-icon"
-                onClick={ () => handlerClickFavorite(e.type, e.id) }
-                src={ shareIcon }
-                data-testid={ `${i}-horizontal-share-btn` }
-                type="button"
-              >
-                <img src={ shareIcon } alt="shareIcon" className="share-icon-done" />
-              </button>
+
               <div className="info-container">
                 <Link
                   className="link"
@@ -131,6 +123,15 @@ function DoneRecipes() {
                   </p>
                 ))}
               </div>
+              <button
+                className="share-exclude-icon"
+                onClick={ () => handlerClickFavorite(e.type, e.id) }
+                src={ shareIcon }
+                data-testid={ `${i}-horizontal-share-btn` }
+                type="button"
+              >
+                <img src={ shareIcon } alt="shareIcon" className="share-icon-done" />
+              </button>
             </div>
           ))}
         </div>

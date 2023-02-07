@@ -63,13 +63,6 @@
   width: 163px;
 }
 
-.share-icon {
-  all: unset;
-  position: absolute;
-  right: 12px;
-  top: 15px;
-}
-
 .info-container {
   padding: 18px 25px 15px 15px;
 }
@@ -109,7 +102,28 @@
   padding: 3px 4px;
 }
 
+.share-exclude-icon {
+  all: unset;
+  z-index: 10;
+}
+
+.btn-options button {
+  background: transparent;
+  border: none;
+}
+
 .share-icon-done {
+  left: 120px;
   margin: 5px;
+  position: absolute;
+  top: 0;
+  width: 25px;
+}
+
+.exclude-icon-done {
+  left: 5px;
+  margin: 5px;
+  position: absolute;
+  top: 0;
   width: 25px;
 }
