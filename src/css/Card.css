@@ -5,19 +5,66 @@
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  height: 200px;
+  height: 30vh;
   justify-content: space-evenly;
   margin: 1vh;
   padding: 3vw;
   text-align: center;
+  width: 40vw;
 }
 
 .card-container img {
-  width: 130px;
+  width: 30vw;
 }
 
 .card-container p {
   color: white;
-  font-size: 0.7em;
+  font-size: 0.9em;
   font-weight: 900;
+}
+
+@media screen and ( min-width : 768px ) {
+
+  .card-container {
+    height: 40vh;
+    width: 30vw;
+  }
+
+  .card-container img {
+    width: 20vw;
+  }
+
+  .card-container p {
+    font-size: 1.2em;
+    padding-top: 0.7em;
+  }
+}
+
+@media screen and ( min-width : 1024px ) {
+
+  .card-container {
+    cursor: pointer;
+    height: 50vh;
+    width: 25vw;
+  }
+
+  .card-container p {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and ( min-width : 1440px ) {
+
+  .card-container {
+    height: 55vh;
+    width: 25vw;
+  }
+
+  .card-container img {
+    width: 15vw;
+  }
+
+  .card-container p {
+    font-size: 1.6em;
+  }
 }
