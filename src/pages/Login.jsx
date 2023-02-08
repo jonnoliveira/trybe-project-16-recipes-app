@@ -47,7 +47,7 @@ function Login() {
             />
           </label>
           <button
-            className="login-botton"
+            className="login-button"
             onClick={ handlerClick }
             type="button"
             disabled={ isFormValid() }

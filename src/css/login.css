@@ -4,6 +4,7 @@
 }
 
 .login-page {
+  align-items: center;
   background-color: black;
   display: flex;
   flex-direction: column;
@@ -14,47 +15,43 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  left: 30vw;
-  position: absolute;
-  top: 10vh;
+  height: 250px;
+  justify-content: space-evenly;
 }
 
 .login-image img {
   filter: drop-shadow(0 0 0.75rem #00a1d2);
-  width: 150px;
+  width: 50vw;
 }
 
 .login-image h1 {
   color: white;
-  font-style: italic;
-  font-weight: 200;
+  font-size: 8vw;
+  font-weight: 400;
 }
 
 .images-line {
   align-self: center;
   display: flex;
   justify-items: center;
-  position: absolute;
 }
 
 .images-line img {
   filter: drop-shadow(0 0 0.35rem #00a1d2);
   margin: 3px;
-  width: 20px;
+  width: 4vw;
 }
 
 .form-login {
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding-left: 16vw;
-  padding-top: 10vh;
-  position: absolute;
+  padding-top: 6vh;
 }
 
 .login-title {
   color: white;
-  font-size: 25px;
+  font-size: 8vw;
   font-style: italic;
   font-weight: 500;
   line-height: 20px;
@@ -72,17 +69,17 @@
 
 .input-login::placeholder {
   color: #41197f;
-  font-size: 14px;
+  font-size: 4vw;
   line-height: 14px;
 }
 
-.login-botton {
+.login-button {
   all: unset;
   background-color: #00a1d2;
   border-radius: 5px;
   color: white;
   filter: drop-shadow(0 0 0.65rem #00a1d2);
-  font-size: 14px;
+  font-size: 4vw;
   font-weight: 700;
   height: 40px;
   line-height: 14px;
@@ -91,7 +88,7 @@
   width: 250px;
 }
 
-.login-botton:disabled {
+.login-button:disabled {
   background-color: #00a1d280;
   color: rgba(255, 255, 255, 0.555);
 }
@@ -100,5 +97,118 @@
 
   .images-line {
     display: none;
+  }
+}
+
+@media screen and ( min-width : 425px ) {
+
+  .login-image img {
+    width: 40vw;
+  }
+
+  .login-image h1 {
+    font-size: 7vw;
+  }
+
+  .images-line img {
+    margin: 8px;
+  }
+
+  .login-title {
+    font-size: 6vw;
+  }
+
+  .input-login::placeholder {
+    font-size: 3vw;
+  }
+
+  .login-button {
+    font-size: 3vw;
+
+  }
+}
+
+@media screen and ( min-width : 768px ) {
+
+  .login-image img {
+    width: 25vw;
+  }
+
+  .login-image h1 {
+    font-size: 5vw;
+  }
+
+  .images-line img {
+    margin: 2vw;
+    width: 2.5vw;
+  }
+
+  .login-title {
+    font-size: 4vw;
+  }
+
+  .input-login::placeholder {
+    font-size: 2vw;
+  }
+
+  .login-button {
+    font-size: 2vw;
+
+  }
+}
+
+@media screen and ( min-width : 1024px ) {
+
+  .login-image img {
+    width: 15vw;
+  }
+
+  .login-image h1 {
+    font-size: 3.5vw;
+  }
+
+  .images-line img {
+    margin: none;
+    width: 2.5vw;
+  }
+
+  .login-title {
+    font-size: 2.5vw;
+  }
+
+  .input-login::placeholder {
+    font-size: 1.5vw;
+  }
+
+  .login-button {
+    font-size: 1.5vw;
+
+  }
+}
+
+@media screen and ( min-width : 1440px ) {
+
+  .login-image img {
+    width: 10vw;
+  }
+
+  .login-image h1 {
+    font-size: 3vw;
+  }
+
+  .images-line img {
+    width: 2vw;
+  }
+
+  .login-title {
+    font-size: 2vw;
+  }
+
+  .input-login::placeholder {
+    font-size: 1vw;
+  }
+
+  .login-button {
+    font-size: 1vw;
   }
 }
