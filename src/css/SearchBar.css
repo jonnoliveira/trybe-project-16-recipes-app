@@ -9,6 +9,7 @@
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin-bottom: 20px;
   min-width: 330px;
   width: 90%;
@@ -19,7 +20,13 @@
   border-radius: 6px;
   height: 2rem;
   justify-self: center;
-  width: 100%;
+  margin-top: 2vh;
+  width: 90%;
+}
+
+.searchBarInput::placeholder {
+  padding: 7vw;
+  text-align: center;
 }
 
 .searchBarRadio {
@@ -36,7 +43,7 @@
   width: 26%;
 }
 
-.searchBarRadio label span {
+.span-radio {
   color: white;
   line-height: 1.5rem;
   margin-left: 4px;
@@ -51,4 +58,45 @@
   height: 1.7rem;
   margin-bottom: 8px;
   width: 70%;
+}
+
+@media screen and ( min-width : 1440px ) {
+
+  .searchBarInput::placeholder {
+    font-size: 1.4em;
+  }
+
+  .searchBarDiv {
+    margin-top: 2vh;
+  }
+
+  .span-radio {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and ( min-width : 2560px ) {
+
+  .searchBarDiv {
+    margin-top: 5vh;
+  }
+
+  .searchBarInput {
+    height: 4rem;
+  }
+
+  .searchBarInput::placeholder {
+    font-size: 2.4em;
+  }
+
+  .span-radio {
+    font-size: 2.5em;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+  }
+
+  .searchBarButton {
+    font-size: 2em;
+    height: 4rem;
+  }
 }

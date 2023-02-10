@@ -17,6 +17,7 @@ function SearchBar() {
     <input
       type="text"
       className="searchBarInput"
+      placeholder="Pizza, hamburguer, chocolate ..."
       onChange={ ({ target }) => setSearch({ ...search, text: target.value }) }
       data-testid="search-input"
     />
@@ -35,7 +36,7 @@ function SearchBar() {
             checked={ search.radio === label }
             data-testid={ `${label}-search-radio` }
           />
-          <span>{`${label} `}</span>
+          <span className="span-radio">{`${label} `}</span>
         </label>
       ))}
     </>
