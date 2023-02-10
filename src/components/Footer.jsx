@@ -9,7 +9,7 @@ function Footer() {
     <div className="footer" data-testid="footer">
       <Link to="/drinks">
         <img
-          className="drinks-icon"
+          className="food-icon"
           src={ drinkIcon }
           alt="Drinks icon"
           data-testid="drinks-bottom-btn"
