@@ -27,7 +27,7 @@
 
   .card-container {
     height: 40vh;
-    width: 30vw;
+    width: 25vw;
   }
 
   .card-container img {
@@ -44,20 +44,24 @@
 
   .card-container {
     cursor: pointer;
-    height: 50vh;
-    width: 25vw;
+    height: 40vh;
+    width: 20vw;
+  }
+
+  .card-container img {
+    width: 15vw;
   }
 
   .card-container p {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 }
 
 @media screen and ( min-width : 1440px ) {
 
   .card-container {
-    height: 55vh;
-    width: 25vw;
+    height: 40vh;
+    width: 20vw;
   }
 
   .card-container img {
@@ -66,5 +70,12 @@
 
   .card-container p {
     font-size: 1.6em;
+  }
+}
+
+@media screen and ( min-width : 2560px ) {
+
+  .card-container p {
+    font-size: 3em;
   }
 }
