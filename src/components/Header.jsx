@@ -33,7 +33,7 @@ function Header() {
 
   return (
     <header className="header">
-      <div className="yellow-container row">
+      <div className="black-container row">
         <div className="logo-container row">
           <img src={ logo } alt="Logo" />
           <p className="title-p">RECIPES</p>

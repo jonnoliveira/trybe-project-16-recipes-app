@@ -12,12 +12,11 @@
 
 .row {
   display: flex;
-  flex-direction: row;
 }
 
-.yellow-container {
+.black-container {
   background-color: black;
-  height: 52px;
+  height: 10vh;
   justify-content: space-between;
   margin-bottom: 15px;
   padding: 6px 21px 6px 26px;
@@ -28,26 +27,34 @@
 }
 
 .logo-container img {
-  width: 40px;
+  width: 15vw;
 }
 
 .title-p {
-  font-size: 22px;
+  font-size: 1.4em;
   margin-left: 20px;
   margin-right: 4px;
 }
 
 .title-h1 {
-  font-size: 22px;
+  font-size: 1.2em;
 }
 
 .search-top-btn {
   all: unset;
 }
 
+.search-top-btn img {
+  width: 7vw;
+}
+
 .profile-top-btn {
   all: unset;
   margin-left: 15px;
+}
+
+.profile-top-btn img {
+  width: 8vw;
 }
 
 .page-title-container {
@@ -67,4 +74,81 @@
 
 .drink-icon {
   width: 45px;
+}
+
+@media screen and ( min-width : 768px ) {
+
+  .logo-container img {
+    width: 7vw;
+  }
+
+  .search-top-btn img {
+    width: 3vw;
+  }
+
+  .profile-top-btn img {
+    width: 3.5vw;
+  }
+}
+
+@media screen and ( min-width : 1024px ) {
+
+  .logo-container img {
+    width: 5vw;
+  }
+
+  .search-top-btn img {
+    width: 2vw;
+  }
+
+  .profile-top-btn img {
+    width: 2.5vw;
+  }
+}
+
+@media screen and ( min-width : 1440px ) {
+
+  .search-top-btn img {
+    width: 2.5vw;
+  }
+
+  .profile-top-btn img {
+    width: 3vw;
+  }
+
+  .title-p {
+    font-size: 2em;
+  }
+
+  .title-h1 {
+    font-size: 1.7em;
+  }
+
+  .page-title {
+    margin-top: 2vh;
+  }
+
+  .page-title img {
+    width: 4vw;
+  }
+
+  .page-title h1 {
+    font-size: 3em;
+  }
+
+}
+
+@media screen and ( min-width : 2560px ) {
+
+  .page-title {
+    margin-top: 5vh;
+  }
+
+  .title-p {
+    font-size: 3em;
+  }
+
+  .title-h1 {
+    font-size: 2.5em;
+  }
 }
