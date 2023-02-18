@@ -12,8 +12,9 @@
   
 </summary>
 
-  
-  Utilizei as principais tags HTML para montar a estrutura da página apresentada e estilizei alterando o posicionamento, tamanho, fontes e cores     dos componentes através da aplicação de CSS. Todo esse processo foi muito importante para entender na prática como funciona a estrutura (HTML)     de uma página e como o estilo (CSS) é aplicado nela. Além disso, pude entender a melhor forma de fazer um Layout e aplicar o conceito de Box       Model. Veja mais abaixo!
+O projeto Recipes app foi projetado em grupo e tinha como objetivo desenvolver um web app de receitas com prioridade para versão mobile. Nesse app o usuário poderia buscar o alimento ou bebida ao clicar no botão de pesquisa ou filtrar com os botões específicos de acordo com sua vontade. Além disso é possível favoritar, compartilhar o link facilmente e acompanhar a preparação de cada receita.
+
+Para alcançar esses objetivos utilizamos React, Context API, Hooks e chamadas a API para dinamismo e funções da aplicação. Já com RTL/Jest pudemos testar e garantir a boa funcionalidade do app. A estruturação e diversificação do trabalho foi coordenada através da metodologia ágil Kanban. Veja mais abaixo!
   
 </details>
 
