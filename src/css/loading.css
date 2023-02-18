@@ -97,9 +97,53 @@
 }
 
 .loading {
-  bottom: 37%;
+  bottom: 35vh;
   font-weight: 600;
-  left: 38%;
+  left: 37vw;
   letter-spacing: 3px;
   position: absolute;
+}
+
+@media screen and ( min-width : 375px ) {
+
+  .loading {
+    bottom: 35vh;
+    left: 39vw;
+  }
+}
+
+@media screen and ( min-width : 425px ) {
+
+  .loading {
+    left: 40vw;
+  }
+}
+
+@media screen and ( min-width : 768px ) {
+
+  .loading {
+    left: 44.5vw;
+  }
+}
+
+@media screen and ( min-width : 1024px ) {
+
+  .loading {
+    left: 46vw;
+  }
+}
+
+@media screen and ( min-width : 1440px ) {
+
+  .loading {
+    left: 47vw;
+  }
+}
+
+@media screen and ( min-width : 2560px ) {
+
+  .loading {
+    bottom: 42vh;
+    left: 48.4vw;
+  }
 }

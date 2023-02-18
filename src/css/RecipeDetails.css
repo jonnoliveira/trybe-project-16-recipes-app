@@ -91,7 +91,7 @@ h4 {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 4vh;
+  line-height: 5vh;
   padding: 4vw;
   width: 90%;
 }
@@ -103,7 +103,7 @@ h4 {
 }
 
 .slider {
-  left: 7vw;
+  left: 5vw;
   width: 90%;
 }
 
@@ -112,10 +112,9 @@ h4 {
   animation: items 15s forwards infinite;
   background-color: white;
   border: none;
-  border-radius: 10px;
   display: flex;
+  flex-direction: column;
   height: 33vh;
-  justify-content: space-between;
 }
 
 @keyframes items {
@@ -177,3 +176,97 @@ h4 {
   top: 50px;
   width: 120px;
 }
+
+@media screen and ( min-width : 425px ) {
+
+  .recipe-title {
+    left: 20vw;
+  }
+}
+
+@media screen and ( min-width : 768px ) {
+
+  .recipe-title {
+    left: 35vw;
+  }
+
+  .ingredients ul {
+    margin-left: 2vw;
+  }
+}
+
+@media screen and ( min-width : 1024px ) {
+
+  .recipe-title {
+    font-size: 30px;
+    left: 40vw;
+  }
+
+  .ingredients ul {
+    margin-left: 3vw;
+  }
+}
+
+@media screen and ( min-width : 1440px ) {
+
+  .recipe-title {
+    font-size: 30px;
+    left: 40vw;
+  }
+
+  .ingredients ul {
+    margin-left: 3.5vw;
+  }
+
+  .ingredients {
+    margin-left: 2vw;
+  }
+
+  .instructions {
+    margin-left: 2vw;
+  }
+}
+
+@media screen and ( min-width : 1440px ) {
+
+  .recipe-category {
+    font-size: 1.5em;
+    left: 2vw;
+  }
+
+  .recipe-title {
+    font-size: 50px;
+    left: 45vw;
+    top: 5vh;
+  }
+
+  h4 {
+    font-size: 2em;
+  }
+
+  .ingredients ul {
+    margin-left: 4vw;
+  }
+
+  .ingredients li {
+    font-size: 1.5em;
+    line-height: 3vh;
+  }
+
+  .instructions {
+    margin-left: 2vw;
+  }
+
+  .instructions p {
+    font-size: 1.5em;
+  }
+
+  .item img {
+    width: 10vw;
+  }
+
+  .item h1 {
+    font-size: 1.5em;
+  }
+}
+
