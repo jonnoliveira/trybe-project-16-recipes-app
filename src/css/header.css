@@ -116,6 +116,10 @@
     width: 3vw;
   }
 
+  .logo-container img {
+    width: 4vw;
+  }
+
   .title-p {
     font-size: 2em;
   }
