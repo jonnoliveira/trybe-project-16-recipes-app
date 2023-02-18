@@ -6,7 +6,6 @@
 
 .favoriteFilters {
   display: flex;
-  justify-content: space-around;
   padding: 15px;
 }
 
@@ -27,10 +26,10 @@
 
 .favoriteElements li {
   align-self: center;
-  border: 1px solid black;
+  border: 1px solid #b1b1b1;
   border-radius: 12px;
   display: flex;
-  height: 150px;
+  height: 152px;
   justify-content: space-between;
   margin-bottom: 10px;
   width: 90%;

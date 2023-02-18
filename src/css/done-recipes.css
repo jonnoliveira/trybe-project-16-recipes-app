@@ -8,8 +8,6 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
-  position: relative;
 }
 
 .buttons-container {
@@ -41,6 +39,7 @@
 
 .cards-done {
   margin-bottom: 10vh;
+  max-width: 90vw;
 }
 
 .card-done-recipe {
@@ -48,9 +47,8 @@
   border-radius: 5px;
   display: flex;
   height: 135px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   position: relative;
-  width: 318px;
 }
 
 .link {
@@ -59,12 +57,13 @@
 
 .img-done-recipe {
   border-radius: 5px 0 0 5px;
-  height: 135px;
-  width: 163px;
+  height: 132px;
+  width: 160px;
 }
 
 .info-container {
-  padding: 18px 25px 15px 15px;
+  padding: 18px;
+
 }
 
 .done-recipe-name {
@@ -80,6 +79,7 @@
   font-size: 10px;
   font-weight: 300;
   line-height: 9px;
+
 }
 
 .done-date-recipe {
@@ -88,6 +88,7 @@
   font-weight: 400;
   line-height: 9px;
   margin-bottom: 10px;
+
 }
 
 .done-recipe-tag {
@@ -100,11 +101,13 @@
   line-height: 9px;
   margin-right: 2px;
   padding: 3px 4px;
+
 }
 
 .share-exclude-icon {
   all: unset;
   z-index: 10;
+
 }
 
 .btn-options button {
