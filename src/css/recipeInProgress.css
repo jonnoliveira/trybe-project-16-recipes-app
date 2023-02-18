@@ -45,7 +45,7 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  left: 18px;
+  left: 4vw;
   position: absolute;
   top: 14px;
   width: 50px;
@@ -89,6 +89,12 @@
   padding: 1vw;
 }
 
+.title-inprogress {
+  align-self: flex-start;
+  margin-left: 5vw;
+  padding: 3vh 0;
+}
+
 .ingredients-in-progress {
   border: 0.554px solid #b1b1b1;
   border-radius: 5.351px;
@@ -98,10 +104,9 @@
   font-weight: 400;
   height: auto;
   line-height: 14px;
-  margin: 10px;
   min-height: 133px;
-  padding: 15px;
-  width: 335px;
+  padding: 2vh 3vw;
+  width: 90%;
 }
 
 .checkbox {
@@ -119,15 +124,6 @@
 
 .itens-in-progress input {
   margin-right: 5px;
-}
-
-.title-inprogress {
-  font-size: 20px;
-  font-weight: 700;
-  left: -100px;
-  line-height: 20px;
-  padding: 3vh 0;
-  position: relative;
 }
 
 .finish-button-inprogress {
@@ -149,4 +145,8 @@
 .finish-button-inprogress:disabled {
   background-color: gray;
   border: none;
+}
+
+@media screen and ( min-width : 768px ) {
+
 }

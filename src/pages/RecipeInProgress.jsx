@@ -100,7 +100,7 @@ function RecipeInProgress() {
             </div>
           </div>
           {alertCopy && <p className="alert">Link copied!</p>}
-          <p className="title-inprogress">Ingredients</p>
+          <h3 className="title-inprogress">Ingredients</h3>
           <BtnBack link="/meals" />
           <div className="ingredients-in-progress">
             {ingredients
@@ -123,7 +123,7 @@ function RecipeInProgress() {
             </label>
           ))}
           </div>
-          <p className="title-inprogress">Instructions</p>
+          <h3 className="title-inprogress">Instructions</h3>
           <div className="instructions">
             <p
               data-testid="instructions"
