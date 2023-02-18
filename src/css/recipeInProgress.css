@@ -139,14 +139,10 @@
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
-  width: 336px;
+  width: 100%;
 }
 
 .finish-button-inprogress:disabled {
   background-color: gray;
   border: none;
-}
-
-@media screen and ( min-width : 768px ) {
-
 }
