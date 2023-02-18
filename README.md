@@ -1,4 +1,4 @@
-# PROJETO 01 - LESSONS LEARNED :computer:
+# PROJETO 16 - RECIPES APP :computer:
 
 ## Esse projeto foi desenvolvido com intuido de conseguir aprovação no módulo de `front-end` do curso da [Trybe](https://www.betrybe.com/) :green_heart:
 
