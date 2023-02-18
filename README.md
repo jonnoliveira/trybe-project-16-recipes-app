@@ -164,9 +164,9 @@ Para alcançar esses objetivos utilizamos React, Context API, Hooks e chamadas a
  
 </summary>
 
-## 100% :heavy_check_mark:
+## 98,39% :heavy_check_mark:
 
-![Project-Lessons-Learned-Grade](https://github.com/jonnoliveira/trybe-project-01-lessons-learned/blob/main/images/grade_lessons_learned.png)
+![Project-Recipes-App-Grade]()
 
 </details> 
  
@@ -181,6 +181,6 @@ Para alcançar esses objetivos utilizamos React, Context API, Hooks e chamadas a
 </summary>
 
   
-![Project-Lessons-Learned-Preview](https://github.com/jonnoliveira/trybe-project-01-lessons-learned/blob/main/images/preview_lessons_learned.png)
+![Project-Recipes-App-Preview]()
   
 </details>
