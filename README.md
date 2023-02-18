@@ -28,15 +28,15 @@ Para alcançar esses objetivos utilizamos React, Context API, Hooks e chamadas a
 
 </summary>
 
-### I. 
+### I. Desenvolva os testes unitários de maneira que a cobertura seja de, no mínimo, 90%
 
-### II. 
+### II. Crie todos os elementos que devem respeitar os atributos descritos no protótipo para a tela de login
 
-### III. 
+### III. Desenvolva a tela de maneira que a pessoa consiga escrever seu email no input de email e sua senha no input de senha
 
-### IV.
+### IV. Desenvolva a tela de maneira que o formulário só seja válido após um email válido e uma senha de mais de 6 caracteres serem preenchidos
 
-### V. 
+### V. Após a submissão do formulário, salve no localStorage o e-mail da pessoa usuária na chave `user`
 
 ### VI. 
 
