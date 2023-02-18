@@ -2,7 +2,7 @@
   align-content: center;
   display: flex;
   justify-content: center;
-  width: 100vw;
+  min-width: 100%;
   z-index: 10;
 }
 
@@ -10,7 +10,6 @@
   align-items: center;
   background: black;
   border: none;
-  border-radius: 5px;
   bottom: 0;
   color: white;
   display: flex;
@@ -22,6 +21,6 @@
   letter-spacing: 0.03em;
   position: fixed;
   text-transform: uppercase;
-  width: 336px;
+  width: 100%;
   z-index: 10;
 }
