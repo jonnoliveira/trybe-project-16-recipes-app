@@ -181,12 +181,11 @@ Para alcançar esses objetivos utilizamos React, Context API, Hooks e chamadas a
 </summary>
 
 ## Mobile version: 
-<div>
+ 
 ![Project-Recipes-App-Preview-1](https://github.com/jonnoliveira/trybe-project-16-recipes-app/blob/main/images/recipes-app-preview-mobile-1.png)
 ![Project-Recipes-App-Preview-3](https://github.com/jonnoliveira/trybe-project-16-recipes-app/blob/main/images/recipes-app-preview-mobile-3.png)
 ![Project-Recipes-App-Preview-2](https://github.com/jonnoliveira/trybe-project-16-recipes-app/blob/main/images/recipes-app-preview-mobile-2.png)
 ![Project-Recipes-App-Preview-4](https://github.com/jonnoliveira/trybe-project-16-recipes-app/blob/main/images/recipes-app-preview-mobile-4.png)
 ![Project-Recipes-App-Preview-5](https://github.com/jonnoliveira/trybe-project-16-recipes-app/blob/main/images/recipes-app-preview-mobile-5.png)
-</div>
   
 </details>
