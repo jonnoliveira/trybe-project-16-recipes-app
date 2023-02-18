@@ -28,7 +28,7 @@ Para alcançar esses objetivos utilizamos React, Context API, Hooks e chamadas a
 
 </summary>
 
-### I. #### Desenvolva os testes unitários de maneira que a cobertura seja de, no mínimo, 90%
+### I. Desenvolva os testes unitários de maneira que a cobertura seja de, no mínimo, 90%
 
 ### II. Crie todos os elementos que devem respeitar os atributos descritos no protótipo para a tela de login
 
@@ -88,69 +88,69 @@ Para alcançar esses objetivos utilizamos React, Context API, Hooks e chamadas a
 
 ### XXX. Implemente a solução de modo que, caso a receita tenha sido iniciada mas não finalizada, o texto do botão deve ser "Continue Recipe"
 
-### XXXI. 
+### XXXI. Redirecione a pessoa usuária caso o botão "Start Recipe" seja clicado, a rota deve mudar para a tela de receita em progresso
 
-### XXXII. 
+### XXXII. Implemente um botão de compartilhar e um de favoritar a receita
  
-### XXXIII.
+### XXXIII. Implemente a solução de forma que, ao clicar no botão de compartilhar, o link da receita dentro do app deve ser copiado para o clipboard e uma mensagem avisando que o link foi copiado deve aparecer
 
-### XXXIV. 
+### XXXIV. Salve as receitas favoritas no `localStorage` na chave `favoriteRecipes`
 
-### XXXV. 
+### XXXV. Implemente o ícone do coração (favorito) de modo que: deve vir preenchido caso a receita esteja favoritada e "despreenchido" caso contrário
 
-### XXXVI. 
+### XXXVI. Implemente a lógica no botão de favoritar. Caso seja clicado, o ícone do coração deve mudar seu estado atual, caso esteja preenchido deve mudar para "despreenchido" e vice-versa
 
-### XXXVII. 
+### XXXVII. Desenvolva a tela de modo que contenha uma imagem da receita, o título, a categoria em caso de comidas e se é ou não alcoólico em caso de bebidas, uma lista de ingredientes com suas respectivas quantidades e instruções
  
-### XXXVIII. 
+### XXXVIII. Desenvolva um checkbox para cada item da lista de ingredientes
 
-### XXXIX. 
+### XXXIX. Implemente uma lógica que ao clicar no checkbox de um ingrediente, o nome dele deve ser "riscado" da lista
 
-### XL. 
+### XL. Salve o estado do progresso, que deve ser mantido caso a pessoa atualize a página ou volte para a mesma receita
 
-### XLI. 
+### XLI. Desenvolva a lógica de favoritar e compartilhar. A lógica da tela de detalhes de uma receita se aplica aqui
  
-### XLII. 
+### XLII. Implemente a solução de modo que o botão de finalizar receita ("Finish Recipe") só pode estar habilitado quando todos os ingredientes estiverem _"checkados"_ (marcados)
 
-### XLIII. 
+### XLIII. Redirecione a pessoa usuária após clicar no botão de finalizar receita ("Finish Recipe"), para a página de receitas feitas, cuja rota deve ser `/done-recipes`
 
-### XLIV. 
+### XLIV. Implemente os elementos da tela de receitas feitas respeitando os atributos descritos no protótipo
 
-### XLV. 
+### XLV. Desenvolva a tela de modo que, caso a receita do card seja uma comida, ela deve possuir: a foto da receita, nome, categoria, nacionalidade, a data em que a pessoa fez a receita, as 2 primeiras tags retornadas pela API e um botão de compartilhar
 
-### XLVI. 
+### XLVI. Desenvolva a tela de maneira que, caso a receita do card seja uma bebida, ela deve possuir: a foto da receita, o nome, se é alcoólica, a data em que a pessoa fez a receita e um botão de compartilhar
  
-### XLVII. 
+### XLVII. Desenvolva a solução de modo que o botão de compartilhar deve copiar a URL da tela de detalhes da receita para o clipboard
 
-### XLVIII. 
+### XLVIII. Implemente 2 botões que filtram as receitas por comida ou bebida e um terceiro que remove todos os filtros
 
-### XLIX. 
+### XLIX. Redirecione para a tela de detalhes da receita caso seja clicado na foto ou no nome da receita
 
-### L. 
+### L. Implemente os elementos da tela de receitas favoritas (cumulativo com os atributos em comum com a tela de receitas feitas), respeitando os atributos descritos no protótipo
  
-### LI. 
+### LI. Desenvolva a tela de modo que, caso a receita do card seja uma comida, ela deve possuir: a foto da receita, nome, categoria, nacionalidade, um botão de compartilhar e um de "desfavoritar"
  
-### LII. 
+### LII. Desenvolva a tela de modo que, caso a receita do card seja uma bebida, ela deve possuir: a foto da receita, nome, se é alcoólica ou não, um botão de compartilhar e um de "desfavoritar"
 
-### LIII. 
+### LIII. Desenvolva a solução de modo que o botão de compartilhar deve copiar a URL da tela de detalhes da receita para o clipboard
 
-### LIV. 
+### LIV. Desenvolva a solução de modo que o botão de "desfavoritar" deve remover a receita da lista de receitas favoritas do `localStorage` e da tela
 
-### LV. 
+### LV. Implemente 2 botões que filtram as receitas por comida ou bebida e um terceiro que remove todos os filtros
 
-### LVI. 
+### LVI. Redirecione a pessoa usuária ao clicar na foto ou no nome da receita, a rota deve mudar para a tela de detalhes daquela receita
  
-### LVII. 
+### LVII. Implemente os elementos da tela de perfil respeitando os atributos descritos no protótipo
 
-### LVIII. 
+### LVIII. Implemente a solução de maneira que o e-mail da pessoa usuária deve estar visível
 
-### LIX. 
+### LIX. Implemente 3 botões: um de nome "Done Recipes", um de nome "Favorite Recipes" e um de nome "Logout"
 
-### LX. 
+### LX. Redirecione a pessoa usuária que, ao clicar no botão de "Done Recipes", a rota deve mudar para a tela de receitas feitas
  
-### LXI. 
+### LXI. Redirecione a pessoa usuária que, ao clicar no botão de "Favorite Recipes", a rota deve mudar para a tela de receitas favoritas
 
-### LXII. 
+### LXII. Redirecione a pessoa usuária que ao clicar no botão de "Logout", o `localStorage` deve ser limpo e a rota deve mudar para a tela de login
 
 </details>
 
