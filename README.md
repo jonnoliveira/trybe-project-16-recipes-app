@@ -28,39 +28,129 @@ Para alcançar esses objetivos utilizamos React, Context API, Hooks e chamadas a
 
 </summary>
 
-### I. Adicione uma cor de fundo específica para a página
+### I. 
 
-### II. Adicione uma barra superior com um título
+### II. 
 
-### III. Adicione uma foto sua à página
+### III. 
 
-### IV. Adicione uma lista de lições aprendidas à página
+### IV.
 
-### V. Crie uma lista de lições que ainda deseja aprender para a página
+### V. 
 
-### VI. Adicione um rodapé para a página
+### VI. 
 
-### VII. Insira pelo menos um link externo na página
-
-### VIII. Crie um artigo sobre o seu aprendizado
-
- ### IX. Crie uma tag html `aside` que contenha uma breve descrição sobre você
-
-### X. Aplique elementos HTML de acordo com o sentido e propósito de cada um deles
-
-### XI. Teste a semântica da sua página usando o site [CodeSniffer](https://squizlabs.github.io/HTML_CodeSniffer/)
-
----
+### VII. 
  
-## Requisitos Bônus
+### VIII. 
 
-### XII. Adicione uma tabela à página
+### IX. 
 
-### XIII. Utilize o Box model
+### X. 
 
-### XIV. Altere atributos relacionados às fontes
+### XI. 
+ 
+### XII. 
 
-### XV. Posicione a tag `article` e a tag `aside` uma ao lado do outra
+### XIII. 
+
+### XIV. 
+
+### XV. 
+
+### XVI. 
+ 
+### XVII. 
+
+### XVIII. 
+
+### XIV. 
+
+### XX. 
+ 
+### XXI.
+ 
+### XXII. 
+
+### XXIII. 
+
+### XXIV. 
+ 
+### XXV. 
+
+### XXVI. 
+
+### XXVII. 
+
+### XXVIII. 
+ 
+### XXIX. 
+
+### XXX. 
+
+### XXXI. 
+
+### XXXII. 
+ 
+### XXXIII.
+
+### XXXIV. 
+
+### XXXV. 
+
+### XXXVI. 
+
+### XXXVII. 
+ 
+### XXXVIII. 
+
+### XXXIX. 
+
+### XL. 
+
+### XLI. 
+ 
+### XLII. 
+
+### XLIII. 
+
+### XLIV. 
+
+### XLV. 
+
+### XLVI. 
+ 
+### XLVII. 
+
+### XLVIII. 
+
+### XLIX. 
+
+### L. 
+ 
+### LI. 
+ 
+### LII. 
+
+### LIII. 
+
+### LIV. 
+
+### LV. 
+
+### LVI. 
+ 
+### LVII. 
+
+### LVIII. 
+
+### LIX. 
+
+### LX. 
+ 
+### LXI. 
+
+### LXII. 
 
 </details>
 
